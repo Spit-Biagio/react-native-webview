@@ -76,6 +76,7 @@ For more, read the [API Reference](./docs/Reference.md) and [Guide](./docs/Guide
 ## Common issues
 
 - If you're getting `Invariant Violation: Native component for "RNCWebView does not exist"` it likely means you forgot to run `react-native link` or there was some error with the linking process
+- If you're getting ` if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {... }` on Android this mean that you are tring to build with a version of sdk that does not have `symbol: variable Q`, to fix this issue just update your build sdk on `android\build.gradle` to version 29 or higther
 
 ## Contributing
 
